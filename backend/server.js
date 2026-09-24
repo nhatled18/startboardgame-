@@ -111,4 +111,6 @@ http
       error: "Backend chỉ cung cấp API. Mở frontend bằng Live Server.",
     });
   })
-  .listen(3000, () => console.log("Backend API: http://localhost:3000"));
+  .listen(process.env.PORT || 3000, () =>
+    console.log(`Backend API listening on port ${process.env.PORT || 3000}`),
+  );
