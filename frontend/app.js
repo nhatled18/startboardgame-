@@ -1,5 +1,5 @@
 const colors = ["#ed5b4f", "#2f80ed", "#24a878"];
-const API_URL = "http://localhost:3000";
+const API_URL = "https://startboardgame.onrender.com";
 const api = (url, options) =>
   fetch(API_URL + url, options).then(async (r) => {
     const data = await r.json();
