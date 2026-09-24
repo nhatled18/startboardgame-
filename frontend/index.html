@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cờ Cá Sao - 3 Đội</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>CỜ CÁ SAO</h1>
+        <p>3 đội - mỗi đội 1 quân cờ - mỗi đội 3 lần đi</p>
+      </div>
+      <button id="reset">Ván mới</button>
+    </header>
+    <main>
+      <section class="board" id="board">
+        <div class="center">
+          <strong>CỜ<br />CÁ SAO</strong><span>CHƠI HẾT MÌNH</span>
+        </div>
+      </section>
+      <aside>
+        <section class="panel">
+          <h2 id="turn">Đang tải...</h2>
+          <p id="status"></p>
+          <button id="dice">Gieo xúc xắc</button>
+        </section>
+        <section class="panel">
+          <h3>Ba đội - mỗi đội 1 quân</h3>
+          <p>Điểm = ô bàn cờ + thưởng về đích</p>
+          <table class="scoreboard">
+            <thead>
+              <tr><th>Đội</th><th>Điểm</th><th>Lượt còn</th></tr>
+            </thead>
+            <tbody id="scoreboard"></tbody>
+          </table>
+          <div id="teams"></div>
+        </section>
+        <section class="panel">
+          <h3>Nhật ký</h3>
+          <ol id="log"></ol>
+          <p id="error"></p>
+        </section>
+      </aside>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
